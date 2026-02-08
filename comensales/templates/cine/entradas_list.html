@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entradas vendidas</title>
+</head>
+<body>
+    <h1>Entradas vendidas</h1>
+
+    {% for entrada in entradas %}
+    <p><strong>Código:</strong> {{ entrada.codigo }}</p>
+    <p><strong>Asiento:</strong> {{ entrada.asiento }}</p>
+    <p><strong>Estado:</strong> {{ entrada.estado }}</p>
+    <p><strong>Fecha venta:</strong> {{ entrada.fecha_venta }}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html>

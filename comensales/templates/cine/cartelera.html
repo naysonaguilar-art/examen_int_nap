@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartelera activa</title>
+</head>
+<body>
+    <h1>Cartelera activa</h1>
+
+    {% for pelicula in peliculas %}
+    <p><strong>{{ pelicula.titulo }}</strong></p>
+    <hr>
+    {% endfor %}
+</body>
+</html>
+>

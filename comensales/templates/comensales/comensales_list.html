@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comensales</title>
+</head>
+<body>
+    <h1>Mis comensales</h1>
+<!--    <p>Nombre: {{data.nombre}}</p>-->
+<!--    <p>Edad: {{data.edad}}</p>-->
+<!--    <p>Pais: {{data.pais}}</p>-->
+
+{% for comensales in data %}
+    <p><strong>Nombre:</strong> {{comensales.nombre}}</p>
+    <p><strong>Edad:</strong> {{comensales.edad}}</p>
+    <p><strong>Pais:</strong> {{comensales.pais}}</p>
+{% endfor %}
+</body>
+</html>
